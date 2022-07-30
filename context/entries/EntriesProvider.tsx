@@ -9,29 +9,7 @@ export interface EntriesState {
 }
 
 const Entries_INITIAL_STATE: EntriesState = {
-  entries: [
-    {
-      _id: uuidv4(),
-      description:
-        "Pendiente :lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-      status: "pending",
-      createdAt: Date.now(),
-    },
-    {
-      _id: uuidv4(),
-      description:
-        "In progress:Voluptatum, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-      status: "in-progress",
-      createdAt: Date.now() - 1000000,
-    },
-    {
-      _id: uuidv4(),
-      description:
-        "Finished:veritatis, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
-      status: "finished",
-      createdAt: Date.now() - 100000,
-    },
-  ],
+  entries: [],
 };
 
 type EntriesProviderProps = {
