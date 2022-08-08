@@ -4,13 +4,13 @@ import { List, Paper } from "@mui/material";
 import { EntriesContext } from "../../context/entries";
 import { UIContext } from "../../context/ui";
 
-import { EntrieStatus } from "../../interfaces";
+import { EntryStatus } from "../../interfaces";
 import { EntryCard } from "./";
 
 import styles from "./EntryList.module.css";
 
 interface Props {
-  status: EntrieStatus;
+  status: EntryStatus;
 }
 
 export const EntryList: FC<Props> = ({ status }) => {
