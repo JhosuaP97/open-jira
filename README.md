@@ -18,6 +18,13 @@ mongodb://localhost:27017/entriesdb
 
 Rename **.env.template** to **.env**
 
+Install node modules and start Next
+
+```
+npm install
+npm run dev
+```
+
 ## Populate the database with test information
 
 ```
