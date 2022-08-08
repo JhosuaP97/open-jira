@@ -88,7 +88,7 @@ const deleteEntry = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
 
   await db.connect();
 
-  const entryToDelete = await Entry.findByIdAndDelete(id);
+  const entryToDelete = await Entry.deleteOne({ _id: id });
 
   if (!entryToDelete) {
     await db.disconnect();
