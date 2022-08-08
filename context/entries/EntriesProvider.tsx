@@ -70,6 +70,7 @@ export const EntriesProvider: FC<EntriesProviderProps> = ({ children }) => {
         },
       });
       dispatch({ type: "Entry - Entry-Delete", payload: data._id });
+      await refreshEntries();
     } catch (error) {
       console.log(error);
     }
